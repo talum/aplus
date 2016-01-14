@@ -108,7 +108,7 @@ img{
 .img-container{
   display:block;
   float:left;
-  max-width:300px;
+  width:30%;
   margin-right: 5%;
   overflow:hidden;
 }
@@ -128,15 +128,17 @@ img{
 
 @media only screen and (max-width:800px){
   .img-container{
+    display:block;
     float:none;
     width:100%;
-  }
-  h2{
-    white-space:nowrap;
+    margin:0;
   }
 }
 
 @media only screen and (max-width:480px){
+  h1{
+    font-size:2em;
+  }
   h2{
     font-size: 1.5em;
   }

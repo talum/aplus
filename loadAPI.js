@@ -24,7 +24,7 @@ function formatArticle(article){
   var title = article.title;
   var url = article.url;
   var thumbnail = article.thumbnail;
-  var formattedArticle = "<div class='article clearfix'><div class='img-container'><img src='" + thumbnail + "''></div><h2 class='trending'><a href='" + url + "' target='blank'>" + title + "</a></h2></div>";
+  var formattedArticle = "<article class='article clearfix'><div class='img-container'><img src='" + thumbnail + "''></div><h2 class='trending'><a href='" + url + "' target='blank'>" + title + "</a></h2></article>";
   return formattedArticle;
 }
 
