@@ -24,13 +24,13 @@ function formatArticle(article){
   var title = article.title;
   var url = article.url;
   var thumbnail = article.thumbnail;
-  var formattedArticle = "<div class='article'><img src='" + thumbnail + "''><a href='" + url + "' target='blank'><h2>" + title + "</h2></a></div>";
+  var formattedArticle = "<div class='article clearfix'><div class='img-container'><img src='" + thumbnail + "''></div><h2 class='trending'><a href='" + url + "' target='blank'>" + title + "</a></h2></div>";
   return formattedArticle;
 }
 
 function formatSponsored(article){
   var formattedArticle = formatArticle(article);
   var sponsor = article.sponsored_by;
-  var sponsoredArticle = "<span class='sponsored'>SPONSORED BY " + sponsor + "</span>";
-  return sponsoredArticle
+  var sponsoredArticle = "<span class='sponsored'>SPONSORED BY " + sponsor + "</span>" + formattedArticle;
+  return sponsoredArticle;
 }

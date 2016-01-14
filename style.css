@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+
+*{
+  box-sizing:border-box;
+}
+
+.container{
+  width:70%;
+  margin: 2em auto;
+}
+
+a{
+  color: #006699;
+  text-decoration: none;
+}
+
+
+
+h1, h2, span{
+  font-family: "Minion Pro", Georgia, "Times New Roman", Times, serif;
+}
+
+h1{
+  font-size:3em;
+}
+
+h2{
+  font-size: 2em;
+  line-height:1.2em;
+  font-weight: bold;
+  display:block;
+}
+
+h2 a:hover{
+  color:#5bc0de;
+}
+
+.article{
+  margin-top:1em;
+  margin-bottom:1em;
+  display:block;
+}
+
+.sponsored{
+  font-size:1em;
+  text-transform: uppercase;
+}
+
+.italic{
+  font-style: italic;
+}
+
+img{
+  width:100%;
+}
+
+.img-container{
+  display:block;
+  float:left;
+  max-width:300px;
+  margin-right: 5%;
+  overflow:hidden;
+}
+
+.clearfix:before, .clearfix:after{
+  content: " ";
+  display: table;
+}
+
+.clearfix:after{
+  clear:both;
+}
+
+.clearfix{
+  *zoom:1;
+}
+
+@media only screen and (max-width:600px){
+  h2{
+    font-size: 1.5em;
+  }
+  .img-container{
+    float:none;
+    width:100%;
+  }
+}
