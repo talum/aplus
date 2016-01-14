@@ -10,24 +10,26 @@ function loadAPI(){
   }).done(function(response){
     var trending = response.trending;
     var sponsored = response.sponsored;
-    debugger;
     for (var i=0; i < trending.length; i++){
-      formatTrending(trending[i]);
+      formatArticle(trending[i]);
     }
-    // $('.container').append(sponsored);
+    formatSponsored(sponsored);
   })
 }
 
-function formatTrending(article){
+function formatArticle(article){
   var title = article.title;
   var url = article.url;
   var thumbnail = article.thumbnail;
-  var formattedArticle = "<img src='" + thumbnail + "''><a href='" + url + "' target='blank'><h2>" + title + "</h2></a>";
+  var formattedArticle = "<div class='article'><img src='" + thumbnail + "''><a href='" + url + "' target='blank'><h2>" + title + "</h2></a></div>";
   $('.container').append(formattedArticle);
 }
 
-function formatSponsored(){
-
-
+function formatSponsored(article){
+  var title = article.title;
+  var url = article.url;
+  var thumbnail = article.thumbnail;
+  var sponsor = article.sponsored_by;
+  var formattedArticle = "<div class='article sponsor'><p class='sponsored'>SPONSORED BY " + sponsor + "</p><img src='" + thumbnail + "''><a href='" + url + "' target='blank'><h2>" + title + "</h2></a></div>";
+  $('.container').append(formattedArticle); 
 }
-
