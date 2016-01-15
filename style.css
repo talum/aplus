@@ -55,18 +55,6 @@ table {
   box-sizing:border-box;
 }
 
-.container{
-  width:70%;
-  margin: 2em auto;
-}
-
-a{
-  color: #006699;
-  text-decoration: none;
-}
-
-
-
 h1, h2, span{
   font-family: "Minion Pro", Georgia, "Times New Roman", Times, serif;
 }
@@ -86,6 +74,20 @@ h2 a:hover{
   color:#5bc0de;
 }
 
+a{
+  color: #006699;
+  text-decoration: none;
+}
+
+img{
+  width:100%;
+}
+
+.container{
+  width:70%;
+  margin: 2em auto;
+}
+
 .article{
   margin-top:1em;
   margin-bottom:1em;
@@ -94,15 +96,10 @@ h2 a:hover{
 
 .sponsored{
   font-size:1em;
-  text-transform: uppercase;
 }
 
 .italic{
   font-style: italic;
-}
-
-img{
-  width:100%;
 }
 
 .img-container{
